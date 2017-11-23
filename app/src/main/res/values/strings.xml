@@ -1,0 +1,94 @@
+<resources>
+
+    <string name="app_name">agentm</string>
+    <string name="add_textbox_hint">Add a ToDo item</string>
+    <string name="add_button_text">Add</string>
+    <string name="service_title">Mobile Apps </string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="checkbox_text">Item Text</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ErrorConectarServicio">Error al conectar al servicio</string>
+    <string name="ErrorGetSocios">Error - get Socios</string>
+    <string name="NombreDNI">Nombre, Apellidos o NIF</string>
+    <string name="searchSocio">Buscar Socio</string>
+    <string name="OrderBySocio">Ordenar por socio</string>
+    <string name="OrderByNombre">Ordenar por nombre</string>
+    <string name="OrderByApellidos">Ordenar por apellidos</string>
+    <string name="OrderByDni">Ordenar por NIF</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="dni">NIF</string>
+    <string name="telefono">Teléfono</string>
+    <string name="email">Email</string>
+    <string name="isUPC">Pertenece a la UPC</string>
+    <string name="savesocio">Guardar Socio</string>
+    <string name="crearsocio">Crear Socio</string>
+    <string name="invalidnif">NIF inválido</string>
+    <string name="campoVacio">Campo vacío</string>
+    <string name="invalidtel">Teléfono inválido</string>
+    <string name="invalidemail">Email inválido</string>
+    <string name="ErrorSaveSocio">Error al guardar el nuevo socio</string>
+    <string name="Socio">Socio</string>
+    <string name="editsocio">Editar Socio</string>
+    <string name="updateSocio">Modificar Socio</string>
+    <string name="delete">Eliminar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="eliminarSocio">Eliminar Socio</string>
+    <string name="areYouSureDeleteSocio">¿Está usted seguro de que quiere eliminar el socio?</string>
+    <string name="areYouSureDeleteRegistro">¿Está usted seguro de que quiere eliminar el registro?</string>
+    <string name="areYouSureDeleteEvento">¿Está usted seguro de que quiere eliminar el evento?</string>
+    <string name="errorCrearSocioCsv">Error al crear Socio.csv!</string>
+    <string name="exportarCvs">Exportar a EXCEL</string>
+    <string name="createdSocioCSV">Creado socios.csv</string>
+    <string name="archivoCreadoEn">Archivo Creado en</string>
+    <string name="filtrar">Filtrar</string>
+    <string name="filtro">Filtro</string>
+    <string name="titulo">Título</string>
+    <string name="fecha">Fecha</string>
+    <string name="descrition">Descripción</string>
+    <string name="precio">Precio</string>
+    <string name="insertarFoto">Añadir fotografía</string>
+    <string name="eliminarFoto">Eliminar fotografía</string>
+    <string name="crearregistro">Crear Registro</string>
+    <string name="registro">Registro</string>
+    <string name="errorFecha">Error al convertir fecha</string>
+    <string name="eliminarRegistro">Eliminar Registro</string>
+    <string name="confirmarPago">Confirmar Pago</string>
+    <string name="lugar">Dirección</string>
+    <string name="ubicacion">Lugar</string>
+    <string name="crearActividad">Crear Actividad</string>
+    <string name="hora">Hora</string>
+    <string name="actividad">Actividad</string>
+    <string name="evento">Evento</string>
+    <string name="crearEvento">Crear Evento</string>
+    <string name="fechaPasada">La fecha tiene que ser futura.</string>
+    <string name="updateEvento">Modificar Evento</string>
+    <string name="eliminarEvento">Eliminar Evento</string>
+    <string name="gratis">Gratis</string>
+    <string name="addSocio">Añadir socio al evento.</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="addSocios">Añadir Socios</string>
+    <string name="impago">Impago</string>
+    <string name="asunto">Asunto</string>
+    <string name="contenido">Contenido</string>
+    <string name="socios_nav">Socios</string>
+    <string name="balance_nav">Balance</string>
+    <string name="cuotas_nav">Cuotas Anuales</string>
+    <string name="calendario_nav">Calendario</string>
+    <string name="email_nav">Email</string>
+    <string name="send_email">Enviar Email</string>
+    <string name="EliminarSocioEvento">Eliminar socio del evento</string>
+    <string name="calendario">Calendario</string>
+    <string name="updateRegistro">Modificar Registro</string>
+
+
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.agentm.ActividadActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay"
+        android:id="@+id/appBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activityActividad_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsvViewAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grisazulClaro"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <com.example.agentm.adapters.MaquinaTextView
+                        android:id="@+id/tituloViewAct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="MANOLO ORTEGA PALACIOS"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="30dp" />
+                </RelativeLayout>
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/desViewAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:lineSpacingExtra="10dp"
+                    android:text="3x Lapices\n20x Libretas\n1x Pack Folios"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/ubicaViewAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Biblioteca Campus Nord"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/lugarViewAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:text="Sala 4 planta 2"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp">
+
+                    <com.example.agentm.adapters.MaquinaTextView
+                        android:id="@+id/precioViewAct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toStartOf="@+id/euroViewAct"
+                        android:text="-3.45"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <com.example.agentm.adapters.MaquinaTextView
+                        android:id="@+id/euroViewAct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="€"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <com.example.agentm.adapters.MaquinaTextView
+                        android:id="@+id/gratisViewAct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/gratis"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:visibility="gone" />
+
+                    <com.example.agentm.adapters.MaquinaTextView
+                        android:id="@+id/fechaViewAct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="20/05/2017 14:30"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/listaSociosAct"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:dividerHeight="5dp"
+                android:nestedScrollingEnabled="true"></ListView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

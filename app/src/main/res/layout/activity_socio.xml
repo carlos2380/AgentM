@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.agentm.SocioActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay"
+        android:id="@+id/appBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activitySocio_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/appBarLayout">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:background="@color/grisazulClaro"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:padding="5dp"
+                android:rowCount="6">
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/nombrViewSocio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="4"
+                    android:layout_margin="5dp"
+                    android:layout_row="0"
+                    android:text="MANOLO ORTEGA PALACIOS"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/tvdniSocio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="5dp"
+                    android:layout_row="1"
+                    android:text="NIF: "
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/dniSocio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_columnSpan="3"
+                    android:layout_margin="5dp"
+                    android:layout_row="1"
+                    android:text="48596584T"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/tvtelSocio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="5dp"
+                    android:layout_row="2"
+                    android:text="TELEFONO: "
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/telSocio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_columnSpan="3"
+                    android:layout_margin="5dp"
+                    android:layout_row="2"
+                    android:text="698569857"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/tvemailSocio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="5dp"
+                    android:layout_row="3"
+                    android:text="EMAIL: "
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/emailSocio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_columnSpan="3"
+                    android:layout_margin="5dp"
+                    android:layout_row="3"
+                    android:text="carlos.2380@hotmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/esUPCSocio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="5dp"
+                    android:layout_row="4"
+                    android:text="SOCIO UPC"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/impagosSocio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:textAllCaps="true"
+                    android:layout_margin="5dp"
+                    android:layout_row="5"
+                    android:text="impago 2016\nimpago 2016"
+                    android:textColor="#5C0606"
+                    android:visibility="gone"
+                    android:textSize="20dp" />
+
+            </GridLayout>
+
+            <ListView
+                android:id="@+id/listaSocActs"
+                android:listSelector="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="2dp"></ListView>
+        </LinearLayout>
+
+
+</RelativeLayout>

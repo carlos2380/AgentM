@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/searchCuotas"
+        android:title="@string/searchSocio"
+        android:icon="@drawable/ic_search_white_24dp"
+        myapp:showAsAction="always"
+        myapp:actionViewClass="android.support.v7.widget.SearchView"
+        android:actionViewClass="android.widget.SearchView"/>
+    <item
+        android:id="@+id/itemFiltroCuotas"
+        android:icon="@drawable/ic_filter_list_white_48dp"
+        android:title="@string/filtro"
+        myapp:showAsAction="always" />
+    <item android:id="@+id/cuotasOrderNombre"
+        android:title="@string/OrderByNombre"
+        myapp:showAsAction="never"/>
+    <item android:id="@+id/cuotasOrderApellidos"
+        android:title="@string/OrderByApellidos"
+        myapp:showAsAction="never"/>
+    <item android:id="@+id/cuotasOrderDni"
+        android:title="@string/OrderByDni"
+        myapp:showAsAction="never"/>
+    <item android:id="@+id/exportarCuotas"
+        android:title="@string/exportarCvs"
+        myapp:showAsAction="never"/>
+</menu>

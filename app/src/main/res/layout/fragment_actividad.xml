@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grisazulClaro"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.agentm.ActividadFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutActividad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnNewActividad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/primary_material_light"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_add_circle_white_48dp" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/calendarioRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b8e0f9"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mesCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_marginEnd="22dp"
+                android:layout_toStartOf="@+id/textView2"
+                android:text="Junio"
+                android:textColor="@color/azulBarraStatus"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/anyCalendar"
+                android:layout_alignBottom="@+id/anyCalendar"
+                android:layout_centerHorizontal="true"
+                android:text="-"
+                android:textColor="@color/azulBarraStatus"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/anyCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/textView2"
+                android:text="2017"
+                android:textColor="@color/azulBarraStatus"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#f1fdff"
+            android:paddingTop="20dp">
+
+
+            <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/compactcalendar_view"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:compactCalendarBackgroundColor="#f1fdff"
+                app:compactCalendarCurrentDayBackgroundColor="#e8ffff"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="#00000000"
+                app:compactCalendarMultiEventIndicatorColor="@color/primary_material_light"
+                app:compactCalendarTargetHeight="250dp"
+                app:compactCalendarTextColor="#000"
+                app:compactCalendarTextSize="12sp" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+
+</FrameLayout>

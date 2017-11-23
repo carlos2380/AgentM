@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.agentm.NewActividadActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay"
+        android:id="@+id/appBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/crearActividad_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edTituloAct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/azulClaro"
+                android:hint="@string/titulo"
+                android:maxLines="1"
+                android:textCursorDrawable="@drawable/edittext_cursor" />
+
+            <EditText
+                android:id="@+id/edDescAct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/azulClaro"
+                android:hint="@string/descrition"
+                android:inputType="textMultiLine"
+                android:textCursorDrawable="@drawable/edittext_cursor" />
+
+
+            <EditText
+                android:id="@+id/edUbicacionAct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/azulClaro"
+                android:hint="@string/ubicacion"
+                android:maxLines="1"
+                android:textCursorDrawable="@drawable/edittext_cursor" />
+
+            <EditText
+                android:id="@+id/edLugarAct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/azulClaro"
+                android:hint="@string/lugar"
+                android:maxLines="1"
+                android:textCursorDrawable="@drawable/edittext_cursor" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:id="@+id/edPrecioAct"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:backgroundTint="@color/azulClaro"
+                    android:hint="@string/precio"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/edEuroAct" />
+
+                <TextView
+                    android:id="@+id/edEuroAct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="€"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rledFechaAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/fecha"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvFechaAct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="20/05/2016"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:backgroundTint="@color/primary_material_light"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_add_circle"
+                    android:buttonTint="@color/azulClaro" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rledHoraAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/hora"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvHoraAct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="15:30"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:backgroundTint="@color/primary_material_light"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_add_circle"
+                    android:buttonTint="@color/azulClaro" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

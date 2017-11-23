@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.DayNight">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/gris</item>
+        <item name="colorControlActivated">@color/azulClaro</item>
+        <item name="colorControlHighlight">@color/azulClaro</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:statusBarColor">@color/azulBarraStatus</item>
+        <item name="colorAccent">@color/primary_material_light</item>
+        <item name="android:navigationBarColor">@color/azulBarraStatus</item>
+        <item name="colorControlActivated">@color/azulClaro</item>
+        <item name="colorControlHighlight">@color/azulClaro</item>
+    </style>
+</resources>

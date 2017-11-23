@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.agentm.NewSocioActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay"
+        android:id="@+id/appBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/crearSocio_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edNameSocio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/azulClaro"
+                android:hint="@string/nombre"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textCursorDrawable="@drawable/edittext_cursor" />
+
+            <EditText
+                android:id="@+id/edApellidoSocio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/azulClaro"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:layout_margin="10dp"
+                android:maxLines="1"
+                android:hint="@string/apellidos" />
+
+            <EditText
+                android:id="@+id/edDniSocio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/azulClaro"
+                android:hint="@string/dni"
+                android:maxLines="1"
+                android:inputType="textCapCharacters"
+                android:textCursorDrawable="@drawable/edittext_cursor" />
+
+            <EditText
+                android:id="@+id/edTelSocio"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/azulClaro"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="@string/telefono"
+                android:maxLines="1"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:id="@+id/edEmailSocio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:backgroundTint="@color/azulClaro"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"
+                android:maxLines="1"
+                android:layout_margin="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlchkisupc"
+                android:clickable="true"
+                android:layout_margin="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="@string/isUPC"/>
+                <CheckBox
+                    android:id="@+id/edisUpcSocio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/azulClaro"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_material_light">#0078d7</color>
+    <color name="azulBarraStatus">#0f007f</color>
+    <color name="azulClaro">#01bcf3</color>
+    <color name="azulSelect">#e1f8ff</color>
+    <color name="grisazulClaro">#e2e7e9</color>
+    <color name="black">#000</color>
+    <color name="gris">#646574</color>
+    <color name="white">#FFF</color>
+</resources>

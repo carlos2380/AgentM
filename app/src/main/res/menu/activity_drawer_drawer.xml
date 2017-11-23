@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group> <!--android:checkableBehavior="single"-->
+        <item
+            android:id="@+id/nav_socios"
+            android:icon="@drawable/ic_people_black_48dp"
+            android:title="Socios" />
+        <item
+            android:id="@+id/nav_balance"
+            android:icon="@drawable/ic_account_balance_wallet_black_48dp"
+            android:title="Balance" />
+        <item
+            android:id="@+id/nav_cuotas"
+            android:icon="@drawable/ic_assignment_black_48dp"
+            android:title="Cuotas" />
+        <item
+            android:id="@+id/nav_eventos"
+            android:icon="@drawable/ic_event_black_48dp"
+            android:title="Eventos" />
+        <item
+            android:id="@+id/nav_email"
+            android:icon="@drawable/ic_mail_black_48dp"
+            android:title="Email" />
+    </group>
+
+</menu>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grisazulClaro"
+    android:orientation="vertical"
+    tools:context="com.example.agentm.RegsitroActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay"
+        android:id="@+id/appBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activityRegistro_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/tituloViewReg"
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:textColor="@color/black"
+                    android:layout_row="0"
+                    android:layout_columnSpan="4"
+                    android:text="MANOLO ORTEGA PALACIOS"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <com.example.agentm.adapters.MaquinaTextView
+                android:id="@+id/desViewReg"
+                android:layout_margin="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:textColor="@color/black"
+                android:layout_row="0"
+                android:layout_columnSpan="4"
+                android:lineSpacingExtra="20dp"
+                android:text="3x Lapices\n20x Libretas\n1x Pack Folios"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp">
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/precioViewReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="-3.45"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/euroViewReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/precioViewReg"
+                    android:layout_marginLeft="5dp"
+                    android:text="€"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+                <com.example.agentm.adapters.MaquinaTextView
+                    android:id="@+id/fechaViewReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:text="20/05/2017"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/fotoViewReg"
+                android:layout_margin="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itemFiltroBalance"
+        android:icon="@drawable/ic_filter_list_white_48dp"
+        android:title="@string/filtro"
+        myapp:showAsAction="always" />
+    <item
+        android:id="@+id/iteCVSBalance"
+        android:icon="@drawable/ic_filter_list_white_48dp"
+        android:title="@string/exportarCvs"
+        myapp:showAsAction="never" />
+</menu>
